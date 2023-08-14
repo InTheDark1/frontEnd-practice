@@ -23,7 +23,7 @@ body{
 /* styling the list */
 .top ul{
     margin: 0; /* 0 margin to avoid gap */
-    padding-top: 85px; /* padding top to get list little down from top */
+    padding-top: 55px; /* padding top to get list little down from top */
     display: flex; /* flex to make sure list is in one line */
     justify-content: center; /* centring the list */
     gap: 43px; /* 43 pix gap between each list element */
@@ -37,30 +37,36 @@ body{
     font-weight:500;
     font-size: 18px;
 }
+/* to give gray color to first child */
 .top ul li:first-child a{
     color:rgba(255, 255, 255, 0.3);
 }
+/* center the text on landing page */
 .top .text{
     text-align: center;
     width: 50%;
     margin:0 auto;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 .top .text h1{
     font-size: 35px;
 }
+/* creating paginations */
 .top .pagination{
     text-align: center;
     
-}
+} 
+/* styling paginations */
 .top .pagination i{
     font-size: 8px;
     color: white;
-    margin-right: 9px;
 }
+/* styling first .pagination child */
 .top .pagination i:first-child{
     color: white;
 }
+/* styling button */
+
 .top button{
     border-radius: 25px;
     padding: 10px 30px;
@@ -69,6 +75,25 @@ body{
     border: none;
     font-size: 15px;
     display: block;
+    margin: 30px auto;
+    
+}
+/* styling content section */
+.content {
+    background-image: url(images/content.png);
+    background-color: #2F1893;
+}
+.content .inner-content {
+    text-align: center;
+    width: 60%;
     margin: 0 auto;
-    margin-top: 30px;
+    padding: 120px 0px;
+}
+.content .inner-content h2{
+    font-size: 30px;
+    
+}
+.content .inner-content p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
 }
