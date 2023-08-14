@@ -1,0 +1,74 @@
+/* setting margin and padding to 0 to avoid any default */
+body{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    font-family: 'DM Sans';
+    color: white;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url(DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+/* styling the top section which covers the first page */
+.top{
+    background-image: url(images/top.png); /*setting a background image */
+    height: 100vh; /* 100vh height so image can cover page */
+    background-color: #2F1893; /* background color to match figma style */
+    background-repeat: no-repeat; /* no repeat to make sure image does not repeat */
+    background-size: cover; 
+    background-position: center; /* centring the image */
+}
+/* styling the list */
+.top ul{
+    margin: 0; /* 0 margin to avoid gap */
+    padding-top: 85px; /* padding top to get list little down from top */
+    display: flex; /* flex to make sure list is in one line */
+    justify-content: center; /* centring the list */
+    gap: 43px; /* 43 pix gap between each list element */
+}
+.top ul li{
+    list-style-type: none; /* to avoid dots */
+}
+.top ul li a{
+    text-decoration: none; /* to remove underline */
+    color:white; /* changing text color */
+    font-weight:500;
+    font-size: 18px;
+}
+.top ul li:first-child a{
+    color:rgba(255, 255, 255, 0.3);
+}
+.top .text{
+    text-align: center;
+    width: 50%;
+    margin:0 auto;
+    padding-top: 100px;
+}
+.top .text h1{
+    font-size: 35px;
+}
+.top .pagination{
+    text-align: center;
+    
+}
+.top .pagination i{
+    font-size: 8px;
+    color: white;
+    margin-right: 9px;
+}
+.top .pagination i:first-child{
+    color: white;
+}
+.top button{
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: #482BE7;
+    color: white;
+    border: none;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
