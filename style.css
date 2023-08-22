@@ -17,13 +17,13 @@ body{
     height: 100vh; /* 100vh height so image can cover page */
     background-color: #2F1893; /* background color to match figma style */
     background-repeat: no-repeat; /* no repeat to make sure image does not repeat */
-    background-size: cover; 
+    background-size: cover;
     background-position: center; /* centring the image */
 }
 /* styling the list */
 .top ul{
     margin: 0; /* 0 margin to avoid gap */
-    padding-top: 55px; /* padding top to get list little down from top */
+    padding-top: 85px; /* padding top to get list little down from top */
     display: flex; /* flex to make sure list is in one line */
     justify-content: center; /* centring the list */
     gap: 43px; /* 43 pix gap between each list element */
@@ -46,10 +46,10 @@ body{
     text-align: center;
     width: 50%;
     margin:0 auto;
-    padding-top: 80px;
+    padding-top: 142px;
 }
 .top .text h1{
-    font-size: 35px;
+    font-size: 50px;
 }
 /* creating paginations */
 .top .pagination{
@@ -92,14 +92,17 @@ body{
 }
 /* styling heading of content section */
 .content .inner-content h2{
-    font-size: 30px;
-    width: 60%;
+    font-size: 58px;
+    /* width: 41%; */
     margin: 20px auto;
 }
 /* styling paragraph of content */
 .content .inner-content p{
     color: rgba(255, 255, 255, 0.7);
     font-size: 15px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
 }
 /* styling features section */
 .feature{
@@ -111,9 +114,10 @@ body{
 }
 .feature .inner-feature{
     display: flex;
+    gap: 5rem;
 }
 .feature .inner-feature .mockup{
-    flex-basis: 25%;
+    flex-basis: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,11 +127,18 @@ body{
     width: 100%;
 }
 .feature .inner-feature .feature-content{
-    flex-basis: 55%;
+    flex-basis: 45%;
 }
 .inner-feature-content{
     display: flex;
     gap: 30px;
+    padding-top: 4rem;
+}
+.feature .inner-feature .feature-content h3{
+    font-size: 42px;
+}
+.feature .inner-feature .feature-content>p{
+    font-size: 22px;
 }
 .feature-pagination{
     display: flex;
@@ -141,40 +152,51 @@ body{
 }
 .form .form-inner{
     display: flex;
-    padding: 15rem;
+    padding: 6rem 15rem;
+    gap: 9rem;
+    align-items: center;
 }
 /* styling heading section of form */
 .form .form-inner #formHeading{
-    font-size: 25px;
+    font-size: 42px;
     font-weight: bold;
 }
+/* used flex to give gap around buttons */
 .form .form-inner .button{
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #979797;
 }
-.form .form-inner .button .signup,.form .form-inner .button .login{
+
+/* using white background for form and border radius to give some
+good shape*/
+.form .form-inner .right{
+    background-color: white;
+    border-radius: 10px;
+
+}
+/* using white background and no border to custom style */
+.form .form-inner .right .button .signup,
+.form .form-inner .right .button .login{
     border: none;
      background: white;
      font-size: 10px;
      text-transform: uppercase;
-     padding: 20px;
-     
+     padding: 20px;    
 }
-.form .form-inner .right{
-    background-color: white;
-
-}
+/* using this to give margin for input */
 .form .form-inner .right .form-content{
     display: block;
-    margin: 2rem;
+    margin: 4.4rem;
 }
+/* styling input tags and give margin and padding */
 .form .form-inner .right .form-content input{
     margin: 10px 0px;
     border-radius: 30px;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border: 1px solid #EBEAED;
 }
+/* styling buttons of form */
 .form .form-inner .right .form-content button{
     display: block;
     margin: 0 auto;
@@ -185,9 +207,116 @@ body{
     color: white;
     margin: 10px 0px;
 }
+/* giving color to first button */
 .form .form-inner .right .form-content .create-account{
 background-color: #25DAC5;
 }
+/* making a horizontal divider among buttons */
+.form .form-inner .right .form-content .gap{
+    display: flex; /* to create divider with text */
+    flex-flow: row;
+    color: #131313;
+    opacity: 0.3; /* to blur the line */
+    align-items: center;
+    gap: 10px; /* giving some gap to line from text */
+}
+.form .form-inner .right .form-content .gap:before,
+.form .form-inner .right .form-content .gap:after{
+    content:'';
+    border-bottom: 1px solid #131313; /* using border to create line */
+    align-items: center; /* alinging items to center */
+    flex: 1 1;
+    opacity: 0.3;
+}
+/* giving color to second button */
 .form .form-inner .right .form-content .login-twitter{
 background-color: #1DA1F2;
+margin-bottom: 20px;
+}
+/* styling clients section */
+.clients{
+    background-color: #1E0E62;
+}
+/* giving padding to client section */
+.inner-clients{
+    padding: 100px 215px;
+}
+/* using display grid for reviews */
+.clients .inner-clients .clients-review{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 1.5rem;
+    
+}
+.clients .inner-clients #clientsHeading{
+font-size: 42px;
+font-weight: 700;
+}   
+/* giving flex to inner of review to get image and conent in a row */
+.clients .inner-clients .clients-review .review-inner{
+    display: flex;
+    gap: 30px;
+    padding: 35px 25px;
+    align-items: flex-start;
+    border: 2px solid rgba(255,255,255,0.15);
+}
+/* styling paragraph of reviews */
+.clients .inner-clients .clients-review .review-inner p{
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.clients .inner-clients .clients-review .review-inner small{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+}
+/* styling call to action section */
+.call-to-action{
+    background: url(images/callToAction.png);
+    background-color: #2F1893;
+}
+
+.call-to-action .inner-action{
+    padding: 100px 315px; /* giving padding to create a gap */
+}
+/* styling heading section of call to action */
+.call-to-action .inner-action .action-heading{
+    font-size: 58px;
+    font-weight: 700;
+    margin: 0 ;
+    text-align: center;
+}
+/* styling paragraph section and using 70% width to make it related to 
+ figma design */
+.call-to-action .inner-action #actionParagraph{
+    font-size: 22px;
+    text-align: center;
+    width: 70%;
+    margin: 20px auto;
+/* giving flex display so i can give gap around buttons easily */
+}
+.call-to-action .inner-action .buttons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58px;
+}
+/* styling social icon and giving it circle shape */
+.call-to-action .inner-action .buttons .social {
+background: #EA3223;
+font-size: 20px;
+padding: 26px;
+text-align: center;
+border-radius: 50%;
+border: none;
+color: white;
+}
+/* styling get to started button */
+.call-to-action .inner-action .buttons #getStarted{
+    font-size: 20px;
+    background: #25DAC5;
+    border: none;
+    border-radius: 100px;
+    padding: 22px 50px;
+    color: white;
 }
