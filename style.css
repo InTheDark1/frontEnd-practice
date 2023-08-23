@@ -388,6 +388,9 @@ color: white;
 .contact {
     background-image: url(images/contact.png); /* background image */
 }
+.contact .contact-inner{
+    gap: 89px;
+}
 /* flex display to contact options*/
 .contact .contact-inner .left .contact-details{
     display: flex; 
@@ -433,8 +436,9 @@ width: 10em; /* specifying width otherwise it would cross box */
     font-weight: 700; /* making select section bolder */
 }
 .contact .contact-inner .right .contact-form-inner .email,
+.contact .contact-inner .right .contact-form-inner .message,
 .contact .contact-inner .right .contact-form-inner .submit{
-    margin: 35px 0px; /* margin from top and botom in email and submit section */
+    margin-top: 35px; /* margin from top and botom in email and submit section */
 }
 .contact .contact-inner .right .contact-form-inner .email input,
 .contact .contact-inner .right .contact-form-inner .message textarea{
