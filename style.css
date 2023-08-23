@@ -1,15 +1,15 @@
 /* setting margin and padding to 0 to avoid any default */
+@font-face {
+    font-family: 'DM Sans';
+    src: url(DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
 body{
     margin: 0;
     text-decoration: none;
     padding: 0;
     font-family: 'DM Sans';
     color: white;
-}
-@font-face {
-    font-family: 'DM Sans';
-    src: url(DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf);
-    src: url(DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
 }
 /* styling the top section which covers the first page */
 .top{
@@ -320,3 +320,41 @@ color: white;
     padding: 22px 50px;
     color: white;
 }
+/* styling the showcase section */
+.showcase{
+    background-color: #2F1893; /* giving background color */
+}
+.showcase .inner-showcase{
+    padding: 100px 190px; /* gap according to figma */
+
+}
+.showcase .inner-showcase .showcase-top{
+    display: flex; /* flex to get button and text in a row */
+    justify-content: space-between; /* arranging them in corners */
+}
+.showcase .inner-showcase #showcaseHeading{
+    font-size: 42px;
+    margin: 0;
+}
+.showcase .inner-showcase .showcase-top #showcaseButton{
+    background: none; /* transparent button */
+    border: 1px solid gray; 
+    border-radius: 30px; /* making border look good */
+    padding: 12px 24px; /* space around text */
+    color: white;
+    font-size: 18px;
+}
+.showcase .inner-showcase .showcase-gallery{
+    display: grid; /* grid to gallery */
+    grid-template-columns: auto auto; /* 2 pics in one row */
+    gap: 30px;
+    margin-top: 50px;
+}
+.showcase .inner-showcase .showcase-gallery .gallery-inner{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.showcase .inner-showcase .showcase-gallery .gallery-inner .image-caption{
+    font-size: 14px;
+    margin-top: 30px;
+} 
