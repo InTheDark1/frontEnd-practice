@@ -358,3 +358,41 @@ color: white;
     font-size: 14px;
     margin-top: 30px;
 } 
+/* styling team section*/
+.team {
+    background-color: #2F1893;
+}
+.team .inner-team{
+    padding: 100px;
+    max-width: 50vw;
+}
+.team .inner-team h1{
+    font-size: 42px;
+    margin: 0;
+}
+.team .inner-team #topParagraph{
+    font-size: 22px;
+}
+/* using grid to get team in a row */
+.team .inner-team .team-list{
+    display: grid;
+    grid-template-columns: auto auto auto; /* 3 members in one row */
+    justify-content: space-between; /* space between list */
+    gap: 60px 0px;
+    margin-top: 70px;
+}
+.team .inner-team .team-list .team-gallery i{
+    margin-right: 20px;
+}
+.contact {
+    background-image: url(images/contact.png);
+}
+.contact .contact-inner .left .contact-details{
+    display: flex;
+    gap: 10px;
+    margin: 44px 0px;
+    max-width: 70%;
+}
+.contact .contact-inner .left .contact-details p{
+    margin: 0;
+}
