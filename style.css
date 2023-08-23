@@ -384,15 +384,81 @@ color: white;
 .team .inner-team .team-list .team-gallery i{
     margin-right: 20px;
 }
+/* styling contact section */
 .contact {
-    background-image: url(images/contact.png);
+    background-image: url(images/contact.png); /* background image */
 }
+/* flex display to contact options*/
 .contact .contact-inner .left .contact-details{
-    display: flex;
+    display: flex; 
     gap: 10px;
     margin: 44px 0px;
     max-width: 70%;
 }
 .contact .contact-inner .left .contact-details p{
     margin: 0;
+}
+.contact .contact-inner .right .contact-form-inner{
+    padding: 50px;
+/* flex to first two input and select */
+}
+.contact .contact-inner .right .contact-form-inner .name-budget{
+display: flex;
+gap: 30px;
+}
+/* styling all labels in contact */
+.contact .contact-inner .right .contact-form-inner label{
+    margin-bottom: 10px;
+    color: #1E0E62;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+}
+/* style common for all inputs and selects */
+.contact .contact-inner .right .contact-form-inner input,
+.contact .contact-inner .right .contact-form-inner select,
+.contact .contact-inner .right .contact-form-inner textarea{
+padding: 12px 24px; /* padding for making them wider */
+    border-radius: 30px; /* radius to give them shape */
+    border: 1px solid #EBEAED; 
+    box-sizing: border-box;
+    color: #151439;
+    font-size: 18px;
+}
+.contact .contact-inner .right .contact-form-inner .name-budget .name input{
+width: 10em; /* specifying width otherwise it would cross box */
+}
+.contact .contact-inner .right .contact-form-inner .name-budget .budget select{
+    
+    font-weight: 700; /* making select section bolder */
+}
+.contact .contact-inner .right .contact-form-inner .email,
+.contact .contact-inner .right .contact-form-inner .submit{
+    margin: 35px 0px; /* margin from top and botom in email and submit section */
+}
+.contact .contact-inner .right .contact-form-inner .email input,
+.contact .contact-inner .right .contact-form-inner .message textarea{
+    width: 100%; /* 100% width to email and message text area */
+}
+.contact .contact-inner .right .contact-form-inner .message textarea{
+    border-radius: 10px; 
+}
+.contact .contact-inner .right .contact-form-inner .submit{
+    display: flex; /* button and copy div in a row */
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .contact-inner .right .contact-form-inner .submit .copy label{
+    margin: 0; /* label had margin bottom but not needed here */
+}
+.contact .contact-inner .right .contact-form-inner .submit .copy input{
+    accent-color: #25DAC5; /* color checkbox when clicked */
+}
+/* styling button of contact section */
+.contact .contact-inner .right .contact-form-inner .submit .send button{
+padding: 12px 38px;
+border-radius: 30px;
+border: none;
+color: white;
+background: #25DAC5;
 }
